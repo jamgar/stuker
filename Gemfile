@@ -36,6 +36,7 @@ gem 'twitter-bootstrap-rails'
 gem "font-awesome-rails"
 gem 'simple_form'
 gem 'devise'
+gem 'omniauth-twitter'
 
 gem 'dotenv-rails', groups: [:development]
 
