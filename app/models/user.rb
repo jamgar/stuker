@@ -7,4 +7,5 @@ class User < ActiveRecord::Base
   validates_presence_of :time_zone
   
   has_many :connection, dependent: :destroy
+  has_many :posts, dependent: :destroy
 end
