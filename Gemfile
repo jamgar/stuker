@@ -37,6 +37,7 @@ gem "font-awesome-rails"
 gem 'simple_form'
 gem 'devise'
 gem 'omniauth-twitter'
+gem 'omniauth-facebook'
 
 gem 'dotenv-rails', groups: [:development]
 
