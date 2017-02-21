@@ -8,4 +8,12 @@ class User < ActiveRecord::Base
   
   has_many :connection, dependent: :destroy
   has_many :posts, dependent: :destroy
+  
+  def facebook
+    self.connection.where(provider: "facebook").first
+  end
+  
+  def twitter
+    self.connection.where(provider: "twitter").first
+  end
 end

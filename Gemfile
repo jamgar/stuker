@@ -41,6 +41,8 @@ gem 'omniauth-facebook'
 gem 'validates_timeliness', '~> 3.0'
 gem 'momentjs-rails'
 gem 'datetimepicker-rails', github: 'zpaulovics/datetimepicker-rails', branch: 'master', submodules: true
+gem 'twitter'
+gem 'koala'
 
 gem 'dotenv-rails', groups: [:development]
 
