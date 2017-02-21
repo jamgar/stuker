@@ -43,6 +43,8 @@ gem 'momentjs-rails'
 gem 'datetimepicker-rails', github: 'zpaulovics/datetimepicker-rails', branch: 'master', submodules: true
 gem 'twitter'
 gem 'koala'
+gem 'delayed_job_active_record'
+gem 'delayed-web', github: 'thebestday/delayed-web'
 
 gem 'dotenv-rails', groups: [:development]
 
