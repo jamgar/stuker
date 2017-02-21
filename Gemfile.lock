@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/derekprior/momentjs-rails.git
+  revision: ea58a20b7b2c901831dd01f34e0054ef6c75bde8
+  specs:
+    momentjs-rails (2.17.1)
+      railties (>= 3.1)
+
+GIT
   remote: git://github.com/thebestday/delayed-web.git
   revision: f44272e663334602bc25c0f7dacde2b3a43b7f84
   specs:
@@ -138,8 +145,6 @@ GEM
     mime-types-data (3.2016.0521)
     mini_portile2 (2.1.0)
     minitest (5.10.1)
-    momentjs-rails (2.17.1)
-      railties (>= 3.1)
     multi_json (1.12.1)
     multi_xml (0.6.0)
     multipart-post (2.0.0)
@@ -262,6 +267,7 @@ GEM
       binding_of_caller (>= 0.7.2)
       railties (>= 4.0)
       sprockets-rails (>= 2.0, < 4.0)
+    will_paginate (3.1.5)
 
 PLATFORMS
   ruby
@@ -278,7 +284,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   koala
-  momentjs-rails
+  momentjs-rails (~> 2.9)!
   omniauth-facebook
   omniauth-twitter
   rails (= 4.2.5)
@@ -293,6 +299,7 @@ DEPENDENCIES
   uglifier (>= 1.3.0)
   validates_timeliness (~> 3.0)
   web-console (~> 2.0)
+  will_paginate
 
 BUNDLED WITH
    1.13.6
