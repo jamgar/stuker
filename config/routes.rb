@@ -11,7 +11,11 @@ Rails.application.routes.draw do
   root 'pages#home'
   get 'dashboard', to: 'pages#dashboard'
   
-  resources :posts
+  resources :posts do
+    member do
+      put :cancel
+    end
+  end
   
   
   # The priority is based upon order of creation: first created -> highest priority.

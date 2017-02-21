@@ -1,7 +1,7 @@
 <div class="panel panel-default">
   <div class="panel-heading">
     <% if post.facebook == true %><span class="label label-primary"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</span><% end %>
-    <% if post.twitter == true %><span class="label label-primary"><i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter</span><% end %>
+    <% if post.twitter == true %><span class="label label-info"><i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter</span><% end %>
     Scheduled on <%= post.scheduled_at %>
   </div>
   <div class="panel-body">
@@ -9,5 +9,6 @@
   </div>
   <div class="panel-footer">
     <p><%= post.state.capitalize %></p>
+    <%= link_to "Cancel", cancel_post_path(post), method: :put if post.state == "scheduled" %>
   </div>
 </div>
